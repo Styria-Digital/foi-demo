@@ -1,0 +1,20 @@
+{% extends 'presentations/master.html' %}
+
+{% load cache %}
+
+{% block title %}Prezentacije{% endblock %}
+
+{% block content %}
+    <h1>Prezentacije</h1>
+    {# cache fragmeta na 5 minuta #}
+    {% cache 300 presentation_list %}
+        <ul class="list-group">
+            {% for presentation in object_list %}
+                <li class="list-group-item">{{ presentation.start_datetime|date:"l, d. E Y." }} - <a
+                        href="{{ presentation.get_url }}">{{ presentation.title }}</a></li>
+            {% empty %}
+                <li class="list-group-item">Nema ni jedne! :(</li>
+            {% endfor %}
+        </ul>
+    {% endcache %}
+{% endblock %}

@@ -1,0 +1,54 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-02 20:30+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: foi_demo/urls.py:25
+msgid "^accounts/login/$"
+msgstr ""
+
+#: foi_demo/urls.py:27
+msgid "^presentations/"
+msgstr "^prezentacije/"
+
+#: presentations/models.py:12
+msgid "User"
+msgstr "Korisnik"
+
+#: presentations/models.py:13
+msgid "Title"
+msgstr "Naslov"
+
+#: presentations/models.py:14
+msgid "Content"
+msgstr "Sadržaj"
+
+#: presentations/models.py:15
+msgid "Start time"
+msgstr "Početak"
+
+#: presentations/models.py:18
+msgid "Presentation"
+msgstr "Prezentacija"
+
+#: presentations/models.py:19
+msgid "Presentations"
+msgstr "Prezentacije"
+
+#: presentations/urls.py:13
+msgid "^all$"
+msgstr "^sve$"

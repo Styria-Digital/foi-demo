@@ -1,0 +1,27 @@
+{% extends 'presentations/master.html' %}
+
+{% block title %}{{ object.title }}{% endblock %}
+
+{% block content %}
+    <h1>Prezentacija</h1>
+    <table class="table table-striped">
+        <tbody>
+        <tr>
+            <th scope="row">Vrijeme</th>
+            <td>{{ object.start_datetime|date:"l, d. E Y." }} u {{ object.start_datetime|time:"G:i" }} sati</td>
+        </tr>
+        <tr>
+            <th scope="row">Naslov</th>
+            <td>{{ object.title }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Sadržaj</th>
+            <td>{{ object.content }}</td>
+        </tr>
+        <tr>
+            <th scope="row">Korisnik</th>
+            <td>{{ object.user }}</td>
+        </tr>
+        </tbody>
+    </table>
+{% endblock %}
